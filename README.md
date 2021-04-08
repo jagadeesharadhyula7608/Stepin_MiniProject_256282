@@ -1,9 +1,9 @@
 # Computation of Transmission Line Parameters in Power Systems
 ![Transmission Line image](https://4.imimg.com/data4/XK/RN/MY-15740765/overhead-transmission-line-500x500.jpg) 
 
-# Transmission Line
+## Transmission Line
 Transmission line is the long conductor with special design (bundled) to carry bulk amount of generated power at very high voltage from one station to another as per variation of the voltage level.
-# Types of Transmission Line
+## Types of Transmission Line
 In transmission line determination of voltage drop, transmission efficiency, line loss etc. are important things to design. These values are affected by line parameter R, L and C of the transmission line. Length wise transmission lines are three types.
 # [Short Transmission Line](https://www.electrical4u.com/short-transmission-line/)
 A short transmission line is classified as a transmission line with:
