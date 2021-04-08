@@ -1,4 +1,4 @@
-# Calculating the Transmission Line Parameters in Power Systems
+# Computation of Transmission Line Parameters in Power Systems
 ![Transmission Line image](https://4.imimg.com/data4/XK/RN/MY-15740765/overhead-transmission-line-500x500.jpg) 
 
 # Transmission Line
