@@ -10,13 +10,13 @@ A short transmission line is classified as a transmission line with:
 - A length less than 80km (50 miles)
 - Voltage level less than 69 kV
 - Only resistance and inductance are taken in calculation capacitance is neglected.
-## [Medium Transmission Line](https://www.electrical4u.com/medium-transmission-line/#:~:text=A%20medium%20transmission%20line%20is,250%20km%20(150%20miles).)
+### [Medium Transmission Line](https://www.electrical4u.com/medium-transmission-line/#:~:text=A%20medium%20transmission%20line%20is,250%20km%20(150%20miles).)
 A medium transmission line is classified as a transmission line with:
 - A length more than 80 km (50 miles) but less than 250 km (150 miles)
 - Operational voltage level is from 69 kV to approx 133 kV
 - Capacitance effect is present
 - Distributed capacitance form is used for calculation purpose.
-## [Long Transmission Line](https://www.electrical4u.com/long-transmission-line/#:~:text=A%20long%20transmission%20line%20is,250%20km%20(150%20miles).&text=In%20a%20long%20transmission%20line,the%20entire%20length%20of%20line.)
+### [Long Transmission Line](https://www.electrical4u.com/long-transmission-line/#:~:text=A%20long%20transmission%20line%20is,250%20km%20(150%20miles).&text=In%20a%20long%20transmission%20line,the%20entire%20length%20of%20line.)
 A long transmission line is classified as a transmission line with:
 - A length more than 250 km (150 miles)
 - Voltage level is above 133 kV
