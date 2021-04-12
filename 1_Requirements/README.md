@@ -1,1 +1,47 @@
-this is regarding the requiremnets 
+# Requirements
+## Introduction
+#### Title: Computation Transmission Parameters in Power System
+This project helps to calculate the Transmission Line parameters(A,B,CD) when given with some input data containing voltage, length of Transmission Line etc. Display the total line parameters and also the Efficiency of the line including voltage regulation values. This parameter helps out the engineer to know about the working of transmission system to reduce losses and construct the transmission line in a much faster pace with high efficiency and reliability.
+
+## Research
+![Description](Link to Pic)
+-- Content 
+## Cost and Features
+![Description](Link to Pic)
+-- Content 
+## Defining Our System
+    -- TBD
+## SWOT ANALYSIS
+![SWOT-Sample](Link to Pic)
+
+# 4W&#39;s and 1&#39;H
+
+## Who:
+
+**TBD**
+
+## What:
+
+**TBD**
+
+## When:
+
+**TBD**
+
+## Where:
+
+**TBD**
+
+## How:
+
+**TBD**
+
+# Detail requirements
+## High Level Requirements:
+--- TBD in Tabular Format 
+-- ID | Description | Status (Implemented/Future)
+
+
+##  Low level Requirements:
+--- TBD in Tabular Format 
+-- ID | Description | Status (Implemented/Future)
