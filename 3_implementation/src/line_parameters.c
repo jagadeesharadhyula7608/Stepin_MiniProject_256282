@@ -40,14 +40,10 @@ c c_div(c a,c b)
     }
     else{
         b.img=b.img*-1;
-        res.real=(1/c_mag(b))*(c_mul(a,b).real);
-        res.img=(1/c_mag(b))*(c_mul(a,b).img);
+        res.real=(1/(pow(b.real,2)+pow(b.img,2)))*(c_mul(a,b).real);
+        res.img=(1/(pow(b.real,2)+pow(b.img,2)))*(c_mul(a,b).img);
         return res;
     }
-c c_sqrt(c a)
-{
-
-}
     
 }
 

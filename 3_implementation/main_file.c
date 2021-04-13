@@ -85,7 +85,7 @@ int main()
                 printf("...Sending end Voltage is %lf+i%lf\n",*ptr,*(ptr+1));
                 printf("...Sending end Current is %lf+i%lf\n",*(ptr+2),*(ptr+3));
                 printf("...The efficieny of Long transmission Line is %lf\n",*(ptr+4));
-                printf("...The voltage regulation if Long transmission line is %lf\n",*(ptr+5));
+                printf("...The voltage regulation of Long transmission line is %lf\n",*(ptr+5));
                 free(ptr);
                 printf("Press any key to continue\n");
                 ch=getch();
