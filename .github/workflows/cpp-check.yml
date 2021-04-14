@@ -13,6 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    
+    - name: Install cppcheck
+      run: sudo apt-get -y install cppcheck
     - name: make
       run: make cpp -C 3_implementation
