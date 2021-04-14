@@ -20,4 +20,4 @@ jobs:
     - name: make test
       run: |
         make test -C 3_implementation
-        valgrind  3_implementation/Build/line_parameters_computation.out
+        valgrind  3_implementation/Build/Test_line_parameters_computation.out
