@@ -10,8 +10,7 @@ unity/unity.c
 
 INC = -Iinc\
 -Iunity
-$(BUILD_DIR):
-	      mkdir $(BUILD_DIR)
+
 ifdef OS
    RM = del /q
    FixPath = $(subst /,\,$1)
@@ -49,3 +48,6 @@ clean:
 	$(RM) $(call FixPath,$(BUILD_DIR)/*)
 	make clean -C doc
 	rmdir $(BUILD_DIR) doc/html
+
+$(BUILD_DIR):
+	      mkdir $(BUILD_DIR)
