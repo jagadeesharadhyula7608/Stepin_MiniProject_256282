@@ -2,7 +2,7 @@
 #include "math.h"
 #include "line_parameters.h"
 #include "stdlib.h"
-
+double arr[10]={0.0};
 c c_mul(c z,c i)
 {
     c res;
@@ -49,7 +49,7 @@ c c_div(c a,c b)
 
 double * shortLine(int rcv_pow,int rcv_vol ,double pf,double res, double inductor )
 {
-    double sinteta,curr,eff,reg,send_vol,send_pow,*ptr1;
+    double sinteta,curr,eff,reg,send_vol,send_pow,*ptr1=arr;
     c z,irbar,vs,r;
     rcv_vol=rcv_vol/sqrt(3);
     curr=rcv_pow/(3*rcv_vol*pf);
@@ -65,11 +65,10 @@ double * shortLine(int rcv_pow,int rcv_vol ,double pf,double res, double inducto
     send_pow=rcv_pow+((3*pow(curr,2)*res));
     eff=(rcv_pow/send_pow)*100;
     reg=((send_vol-rcv_vol)*100)/rcv_vol;
-    ptr1=(double *) calloc(4,sizeof(double));
     *(ptr1)=vs.real;
     *(ptr1+1)=vs.img;
     *(ptr1+2)=eff;
-    *(ptr1+3)=reg;                                       
+    *(ptr1+3)=reg;                                      
  /*  printf("...Sending end Voltage is %lf+i%lf\n",vs.real,vs.img);
     printf("...The efficieny of Short transmission Line is %lf\n",eff);
     printf("...The voltage regulation if short transmission line is %lf\n",reg); */
@@ -78,7 +77,7 @@ double * shortLine(int rcv_pow,int rcv_vol ,double pf,double res, double inducto
 }
 double * mediumLine(int rcv_pow,int rcv_vol ,double pf,double res, double inductor,double cap,int len )
 {
-    double sinteta,rcv_curr,eff,reg,send_vol,send_pow,*ptr,ang1,ang2,send_curr,pfs;
+    double sinteta,rcv_curr,eff,reg,send_vol,send_pow,ang1,ang2,send_curr,pfs,*ptr=arr;
     c z,Irbar,vs,r,Ic1bar,Ilinebar,Ic2bar,Isbar;
     rcv_vol=rcv_vol/sqrt(3);
     rcv_curr=rcv_pow/(3*rcv_vol*pf);
@@ -104,7 +103,6 @@ double * mediumLine(int rcv_pow,int rcv_vol ,double pf,double res, double induct
     send_pow=rcv_pow+((3*pow(send_curr,2)*res*0.5)+(3*pow(rcv_curr,2)*res*0.5));
     eff=(rcv_pow/send_pow)*100;
     reg=((send_vol-rcv_vol)*100)/rcv_vol;
-    ptr=(double *) calloc(7,sizeof(double));
     *(ptr)=vs.real;
     *(ptr+1)=vs.img;
     *(ptr+2)=Isbar.real;
@@ -119,7 +117,7 @@ double * mediumLine(int rcv_pow,int rcv_vol ,double pf,double res, double induct
 }
 double * longLine(int rcv_pow,int rcv_vol ,double pf,double res, double inductor,double cap,int len )
 {
-    double sinteta,rcv_curr,eff,reg,send_vol,send_pow,*ptr,send_curr;
+    double sinteta,rcv_curr,eff,reg,send_vol,send_pow,send_curr,*ptr=arr;
     c z,irbar,vs,r,ybar,A,B,C,D,vrbar,Isbar;
     rcv_vol=rcv_vol/sqrt(3);
     rcv_curr=rcv_pow/(3*rcv_vol*pf);
@@ -144,12 +142,10 @@ double * longLine(int rcv_pow,int rcv_vol ,double pf,double res, double inductor
     send_pow=rcv_pow+((3*pow(send_curr,2)*res*0.5)+(3*pow(rcv_curr,2)*res*0.5));
     eff=(rcv_pow/send_pow)*100;
     reg=(((send_vol/A.real)-rcv_vol)*100)/rcv_vol;
-    ptr=(double *) calloc(4,sizeof(double));
     printf("%lf+i%lf  ",A.real,A.img);
     printf("%lf+i%lf\n",B.real,B.img);
     printf("%lf+i%lf  ",C.real,C.img);
     printf("%lf+i%lf\n",D.real,D.img);
-    ptr=(double *) calloc(6,sizeof(double));
     *(ptr)=vs.real;
     *(ptr+1)=vs.img;
     *(ptr+2)=Isbar.real;

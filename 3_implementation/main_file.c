@@ -35,7 +35,6 @@ int main()
                 printf("...Sending end Voltage is %.3lf+i%.3lf\n",*ptr,*(ptr+1));
                 printf("...The efficieny of Short transmission Line is %.3lf\n",*(ptr+2));
                 printf("...The voltage regulation of short transmission line is %.3lf\n",*(ptr+3));
-                free(ptr);
                 printf("Press any key to continue\n");
                 ch=getch();
                 break;
@@ -60,8 +59,7 @@ int main()
                 printf("...Sending end Current is %.3lf+i%.3lf\n",*(ptr+2),*(ptr+3));
                 printf("...Sending end Power Factor is %.3lf\n",*(ptr+4));
                 printf("...The efficieny of Medium transmission Line is %.3lf\n",*(ptr+5));
-                printf("...The voltage regulation of Medium transmission line is %.3lf\n",*(ptr+6));
-                free(ptr);   
+                printf("...The voltage regulation of Medium transmission line is %.3lf\n",*(ptr+6));   
                 printf("Press any key to continue\n");
                 ch=getch();
                 break;
@@ -81,12 +79,11 @@ int main()
                 scanf("%lf",&pf);
                 printf("\nEnter the length of the Transmission Line: ");
                 scanf("%d",&len);
-              ptr=longLine(rcv_pow,rcv_vol,pf,res,inductor,cap,len);
+                ptr=longLine(rcv_pow,rcv_vol,pf,res,inductor,cap,len);
                 printf("...Sending end Voltage is %lf+i%lf\n",*ptr,*(ptr+1));
                 printf("...Sending end Current is %lf+i%lf\n",*(ptr+2),*(ptr+3));
                 printf("...The efficieny of Long transmission Line is %lf\n",*(ptr+4));
                 printf("...The voltage regulation of Long transmission line is %lf\n",*(ptr+5));
-                free(ptr);
                 printf("Press any key to continue\n");
                 ch=getch();
                 break;

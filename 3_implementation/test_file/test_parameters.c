@@ -99,8 +99,8 @@ void test_c_angle(void)
 }
 void test_shortLine(void)
 {
-    double arr[4]={13816.4,393.6698,93.93435,8.826117};
-    double *p=shortLine(5000000,22000,0.8,4,6),*res=arr;
+    double *p=shortLine(5000000,22000,0.8,4,6),*res=calloc(4,sizeof(double));
+    *(res)=13816.4;*(res+1)=393.6698;*(res+2)=93.93435;*(res+3)=8.826117;
     for(int i=0;i<4;i++)
         TEST_ASSERT_EQUAL_FLOAT(*(res+i),*(p+i));
 }
