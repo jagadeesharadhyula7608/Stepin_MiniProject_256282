@@ -36,13 +36,13 @@ test: $(SRC) $(TEST_SRC)
 	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
 
 coverage:${PROJECT_NAME}
-	gcc -fprofile-arcs -ftest-coverage $(SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+	gcc -fprofile-arcs -ftest-coverage $(SRC) $(INC) main_file.c -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
 	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
-	gcov -a $(SRC)
-staticcheck:
-			cpp enable=all $(SRC)
+	gcov -a $(SRC) main_file.c
+cpp:
+		cppcheck enable=all $(SRC) main_file.c 
 doc:
-	make -C doc
+	make -C docmak
 
 clean:
 	$(RM) $(call FixPath,$(BUILD_DIR)/*)
@@ -50,4 +50,4 @@ clean:
 	rmdir $(BUILD_DIR) doc/html
 
 $(BUILD_DIR):
-	      mkdir $(BUILD_DIR)
+	mkdir $(BUILD_DIR)
