@@ -41,7 +41,7 @@ coverage:${PROJECT_NAME}
 	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
 	gcov -a $(SRC)
 staticcheck:
-			cpp enable=all $(TEST_SRC)
+			cpp enable=all $(SRC)
 doc:
 	make -C doc
 
