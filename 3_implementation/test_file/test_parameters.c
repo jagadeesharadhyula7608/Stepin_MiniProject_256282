@@ -103,6 +103,7 @@ void test_shortLine(void)
     *(res)=13816.4;*(res+1)=393.6698;*(res+2)=93.93435;*(res+3)=8.826117;
     for(int i=0;i<4;i++)
         TEST_ASSERT_EQUAL_FLOAT(*(res+i),*(p+i));
+    free(res);
 }
 void test_mediumLine(void)
 {
