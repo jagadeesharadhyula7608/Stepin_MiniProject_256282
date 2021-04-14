@@ -1,4 +1,4 @@
-name: C/C++ CI
+name: C/C++ CI-Build
 
 on:
   push:
@@ -14,6 +14,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     
-    - name: make all 
-      run: make all -C 3_implementation
+    - name: make  all
+      run: make all -c 3_implementation
 
