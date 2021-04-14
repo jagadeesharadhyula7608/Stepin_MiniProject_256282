@@ -26,18 +26,18 @@ endif
 .PHONY : all test coverage run clean doc
 
 all:$(BUILD_DIR)
-	gcc main_file.c $(SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
+	gcc main_file.c $(SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC)) -lm
 
 run: all
-	$(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
+	$(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC)) -lm
 
 test: $(SRC) $(TEST_SRC)
-	gcc $^ $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
-	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+	gcc $^ $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC)) -lm
+	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC)) -lm
 
 coverage:${PROJECT_NAME}
-	gcc -fprofile-arcs -ftest-coverage $(SRC) $(INC) main_file.c -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
-	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+	gcc -fprofile-arcs -ftest-coverage $(SRC) $(INC) main_file.c -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC)) -lm
+	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC)) -lm
 	gcov -a $(SRC) main_file.c
 cpp:
 		cppcheck enable=all $(SRC) main_file.c 
