@@ -52,7 +52,7 @@ This project helps to calculate the Transmission Line parameters(A,B,CD) when gi
 ##  Low level Requirements:
 | ID | Description | HLR ID | Status
 | ------ | ------ | ------ | ------|
-| LR01 | User has a menu for selecting the type of transmission line     |  HR01  |  IMPLEMENTED   |
+| LR01 | - Small menu should be created for the user to interact.     |  HR01  |  IMPLEMENTED   |
 | LR02 | Requires the input from the user for Short transmission line | HR02 | IMPLEMENTED  |
 | LR03 | Requires the input from the user for Medium transmission line | HR03 | IMPLEMENTED  |
 | LR04 | Requires the input from the user for Long transmission line | HR04 | IMPLEMENTED  | 
