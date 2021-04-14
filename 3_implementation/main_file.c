@@ -36,7 +36,7 @@ int main()
                 printf("...The efficieny of Short transmission Line is %.3lf\n",*(ptr+2));
                 printf("...The voltage regulation of short transmission line is %.3lf\n",*(ptr+3));
                 printf("Press any key to continue\n");
-                ch=getch();
+                scanf("%c",&ch);
                 break;
         case 2:
                 printf("........Computing Medium Transmission Line Parameters(Nominal Pi model)........\n");
@@ -61,7 +61,7 @@ int main()
                 printf("...The efficieny of Medium transmission Line is %.3lf\n",*(ptr+5));
                 printf("...The voltage regulation of Medium transmission line is %.3lf\n",*(ptr+6));   
                 printf("Press any key to continue\n");
-                ch=getch();
+                scanf("%c",&ch);
                 break;
         case 3:
                 printf("..............Computing Long Transmission Line Parameters...........\n");
@@ -85,7 +85,7 @@ int main()
                 printf("...The efficieny of Long transmission Line is %lf\n",*(ptr+4));
                 printf("...The voltage regulation of Long transmission line is %lf\n",*(ptr+5));
                 printf("Press any key to continue\n");
-                ch=getch();
+                scanf("%c",&ch);
                 break;
         case 4:
                 exit(0);
