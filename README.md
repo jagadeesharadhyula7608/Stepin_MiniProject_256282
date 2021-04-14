@@ -47,3 +47,4 @@ My SFID is 256282
 * Unit tests with Cunit
 * Static code analysis using cppcheck
 * Dynamic Code analysis using Valgrind
+* Code Quality using Codacy
