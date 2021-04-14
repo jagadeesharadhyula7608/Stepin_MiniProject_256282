@@ -1,9 +1,7 @@
+### My SFID is 256282
 |Build|Unit Test|cppcheck|Valgrind|Codacy|Coverage|
 |:--:|:--:|:--:|:--:|:--:|:--:|
 |[![C-Build](https://github.com/jagadeesharadhyula7608/Stepin_MiniProject_256282/actions/workflows/c-build.yml/badge.svg)](https://github.com/jagadeesharadhyula7608/Stepin_MiniProject_256282/actions/workflows/c-build.yml)|[![Unit_Testing](https://github.com/jagadeesharadhyula7608/Stepin_MiniProject_256282/actions/workflows/unit_test.yml/badge.svg)](https://github.com/jagadeesharadhyula7608/Stepin_MiniProject_256282/actions/workflows/unit_test.yml)|[![Cpp_Check](https://github.com/jagadeesharadhyula7608/Stepin_MiniProject_256282/actions/workflows/cpp-check.yml/badge.svg)](https://github.com/jagadeesharadhyula7608/Stepin_MiniProject_256282/actions/workflows/cpp-check.yml)|[![Valgrind](https://github.com/jagadeesharadhyula7608/Stepin_MiniProject_256282/actions/workflows/Valgrind.yml/badge.svg)](https://github.com/jagadeesharadhyula7608/Stepin_MiniProject_256282/actions/workflows/Valgrind.yml)|[![Codacy Badge](https://app.codacy.com/project/badge/Grade/3ac7e2a959a24fa4b5d1b9c1c886ff75)](https://www.codacy.com/manual/stepin654321/MiniProject_Template?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=stepin654321/MiniProject_Template&amp;utm_campaign=Badge_Grade)|[![Code-Coverage](https://github.com/jagadeesharadhyula7608/Stepin_MiniProject_256282/actions/workflows/coverage.yml/badge.svg)](https://github.com/jagadeesharadhyula7608/Stepin_MiniProject_256282/actions/workflows/coverage.yml)|
-
-
-
 
 # Computation of Transmission Line Parameters in Power Systems
 ![Transmission Line image](https://4.imimg.com/data4/XK/RN/MY-15740765/overhead-transmission-line-500x500.jpg) 
@@ -39,8 +37,6 @@ Folder             | Description
 `5_Report`         | Documents with overall report
 `6_ImagesAndVideos`| Related Videos and images regarding project
 `7_Other`          | Related other documents
-
-My SFID is 256282
 
 ## GitHub Actions
 * Build using Make for CI
