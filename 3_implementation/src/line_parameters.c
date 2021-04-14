@@ -2,7 +2,7 @@
 #include "math.h"
 #include "line_parameters.h"
 #include "stdlib.h"
-double arr[10]={0.0};
+double arr[14]={0.0};
 c c_mul(c z,c i)
 {
     c res;
@@ -69,9 +69,6 @@ double * shortLine(int rcv_pow,int rcv_vol ,double pf,double res, double inducto
     *(ptr1+1)=vs.img;
     *(ptr1+2)=eff;
     *(ptr1+3)=reg;                                      
- /*  printf("...Sending end Voltage is %lf+i%lf\n",vs.real,vs.img);
-    printf("...The efficieny of Short transmission Line is %lf\n",eff);
-    printf("...The voltage regulation if short transmission line is %lf\n",reg); */
     return ptr1;
     
 }
@@ -110,9 +107,6 @@ double * mediumLine(int rcv_pow,int rcv_vol ,double pf,double res, double induct
     *(ptr+4)=pfs;
     *(ptr+5)=eff;
     *(ptr+6)=reg;                                       
- /*  printf("...Sending end Voltage is %lf+i%lf\n",vs.real,vs.img);
-    printf("...The efficieny of Short transmission Line is %lf\n",eff);
-    printf("...The voltage regulation if short transmission line is %lf\n",reg); */
     return ptr;
 }
 double * longLine(int rcv_pow,int rcv_vol ,double pf,double res, double inductor,double cap,int len )
@@ -142,19 +136,17 @@ double * longLine(int rcv_pow,int rcv_vol ,double pf,double res, double inductor
     send_pow=rcv_pow+((3*pow(send_curr,2)*res*0.5)+(3*pow(rcv_curr,2)*res*0.5));
     eff=(rcv_pow/send_pow)*100;
     reg=(((send_vol/A.real)-rcv_vol)*100)/rcv_vol;
-    printf("%lf+i%lf  ",A.real,A.img);
-    printf("%lf+i%lf\n",B.real,B.img);
-    printf("%lf+i%lf  ",C.real,C.img);
-    printf("%lf+i%lf\n",D.real,D.img);
     *(ptr)=vs.real;
     *(ptr+1)=vs.img;
     *(ptr+2)=Isbar.real;
     *(ptr+3)=Isbar.img;
     *(ptr+4)=eff;
-    *(ptr+5)=reg;                                      
- /*  printf("...Sending end Voltage is %lf+i%lf\n",vs.real,vs.img);
-    printf("...The efficieny of Short transmission Line is %lf\n",eff);
-    printf("...The voltage regulation if short transmission line is %lf\n",reg); */
-    //printf("%lf",cosh(sqrt(c_mul(ybar,z).real*-1)));
+    *(ptr+5)=reg;
+    *(ptr+6)=A.real;
+    *(ptr+7)=A.img; 
+    *(ptr+8)=B.real; 
+    *(ptr+9)=B.img; 
+    *(ptr+10)=C.real; 
+    *(ptr+11)=C.img;                                     
     return ptr;
 }

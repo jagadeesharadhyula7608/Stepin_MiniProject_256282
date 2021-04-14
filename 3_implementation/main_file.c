@@ -10,14 +10,12 @@ int main()
     {
      int rcv_pow,rcv_vol,len;
      double pf,*ptr,res,inductor,cap;
-     system("cls");
      printf("1. Compute Short Transmission Line Parameters\n");
      printf("2. Compute Medium Transmission(Pi model) Line parameters\n"); 
      printf("3. Compute LongTransmission Line parameters\n");
      printf("4. Exit\n");
      printf("Enter your choice :");
      scanf("%d",&choice);
-     system("cls");
      switch (choice)
      {
         case 1: 
@@ -81,6 +79,11 @@ int main()
                 printf("\nEnter the length of the Transmission Line: ");
                 scanf("%d",&len);
                 ptr=longLine(rcv_pow,rcv_vol,pf,res,inductor,cap,len);
+                printf("  ABCD Parameters of Long Transmission Line\n  ");
+                printf("%lf+i%lf  ",*(ptr+6),*(ptr+7));
+                printf("%lf+i%lf\n",*(ptr+8),*(ptr+9));
+                printf("%lf+i%lf  ",*(ptr+10),*(ptr+11));
+                printf("%lf+i%lf\n",*(ptr+6),*(ptr+7));
                 printf("...Sending end Voltage is %lf+i%lf\n",*ptr,*(ptr+1));
                 printf("...Sending end Current is %lf+i%lf\n",*(ptr+2),*(ptr+3));
                 printf("...The efficieny of Long transmission Line is %lf\n",*(ptr+4));
