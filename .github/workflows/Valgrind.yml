@@ -1,4 +1,4 @@
-name: Valgrin
+name: Valgrind
 
 on:
   push:
