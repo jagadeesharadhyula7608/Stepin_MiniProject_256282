@@ -19,7 +19,7 @@ else
    ifeq ($(shell uname), Linux)
       RM = rm -rf
       FixPath = $1
-	  EXEC = out
+	  EXEC = out -lm
    endif
 endif
 
