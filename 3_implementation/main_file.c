@@ -4,7 +4,8 @@
 #include "stdlib.h"
 int main()
 {
-    int choice,ch; 
+    int choice;
+    char ch; 
     while (1)
     {
      int rcv_pow,rcv_vol,len;
