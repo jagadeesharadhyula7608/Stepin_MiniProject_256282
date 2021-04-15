@@ -15,4 +15,4 @@ jobs:
     - name: Install gcov 
       run: sudo apt -y install gcovr
     - name: make coverage
-      run: make coverage -C 3_implementation
+      run: make coverage -C 3_Implementation
