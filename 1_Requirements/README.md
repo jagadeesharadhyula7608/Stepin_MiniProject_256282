@@ -45,14 +45,12 @@ This project helps to calculate the Transmission Line parameters(A,B,CD) when gi
 | HR02 | Requires the input from the user for Short transmission line | Technical | IMPLEMENTED  |
 | HR03 | Requires the input from the user for Medium transmission line | Technical | IMPLEMENTED  |
 | HR04 | Requires the input from the user for Long transmission line | Technical | IMPLEMENTED  | 
-| HR05 | Exit from the program | Technical | IMPLEMENTED  |
 
 
 ##  Low level Requirements:
 | ID | Description | HLR ID | Status
 | ------ | ------ | ------ | ------|
-| LR01 | - Small menu should be created for the user to interact.     |  HR01  |  IMPLEMENTED   |
-| LR02 | Requires the input from the user for Short transmission line | HR02 | IMPLEMENTED  |
-| LR03 | Requires the input from the user for Medium transmission line | HR03 | IMPLEMENTED  |
-| LR04 | Requires the input from the user for Long transmission line | HR04 | IMPLEMENTED  | 
-| LR05 | Exit from the program | HR05 | IMPLEMENTED  |
+| LR01 | Small menu should be created for the user to interact.     |  HR01  |  IMPLEMENTED|
+| LR02 | A function to calculate the complex addition.And magnitude of complex number is required to compute the function shortLine | HR02 | IMPLEMENTED|
+| LR03 | A function to calculate the complex addition.And magnitude of complex number and complex multiplication function is required to compute the function MediumLine | HR03 |IMPLEMENTED|
+| LR04 | Requires all the complex number arthimetic functions   HR04 | IMPLEMENTED| 
