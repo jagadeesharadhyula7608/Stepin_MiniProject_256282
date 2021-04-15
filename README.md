@@ -24,7 +24,7 @@ A medium transmission line is classified as a transmission line with:
 ### [Long Transmission Line](https://www.electrical4u.com/long-transmission-line/#:~:text=A%20long%20transmission%20line%20is,250%20km%20(150%20miles).&text=In%20a%20long%20transmission%20line,the%20entire%20length%20of%20line.)
 A long transmission line is classified as a transmission line with:
 - A length more than 250 km (150 miles)
-- Voltage level is above 133 kV
+- Voltage level is above 132 kV
 - Line constants are considered as distributed over the length of the line.
 
 ## Folder Structure
