@@ -4,17 +4,41 @@
 This project helps to calculate the Transmission Line parameters(A,B,CD) when given with some input data containing voltage, length of Transmission Line etc. Display the total line parameters and also the Efficiency of the line including voltage regulation values. This parameter helps out the engineer to know about the working of transmission system to reduce losses and construct the transmission line in a much faster pace with high efficiency and reliability.
 
 ## Research
-
-## Cost and Features
-![Description](Link to Pic)
--- Content 
-## Defining Our System
-  ### Objectives:
+### Objectives:
   - Compute transmission line parameters for short transmission system
   - Compute transmission line parameters for Medium transmission system using Nominal pi Model
   - Compute transmission line parameters for Long transmission system assuming resistance of the system as zero
   ### Explaination:
    For Transmission lines it takes more time for calculating the sending end voltage to finally get the efficiency manually.This project helps the customer to re-design their transmission system with higher efficiency by simply puting their design values in this project and taking out the efficiency.
+## Cost and Features
+- Previously the computation is done manually.
+- Now the system is computing the values,by providing the input values.
+- Provides the efficiency and voltage regulation values. 
+## Defining Our System
+  Input to the various transmission systems are explained below
+  #### Small Transmission Line
+    - Input 1-> Recieving end Power(Enter in Mega/Kilo watts)
+    - Input 2-> Recieving end Voltage(Enter in Kilo volts)
+    - Input 3-> Resistance  of Short Transmission Line(Enter in Ohms)
+    - Input 4-> Inductive Reactance(Enter in ohms)
+    - Input 5-> Power factor(0<pf<1)
+  #### Medium Transmission Line
+    - Input 1-> Recieving end Power(Enter in Mega/Kilo watts)
+    - Input 2-> Recieving end Voltage(Enter in Kilo volts)
+    - Input 3-> Resistance  of Medium Transmission Line(Enter in Ohms)
+    - Input 4-> Inductive Reactance(Enter in ohms)
+    - Input 5-> Capacitive suceptance(Enter in mho)
+    - Input 6-> Power factor(0<pf<1)
+    - Input 7-> Length of line(Enter in Km)
+  #### Long Transmission Line
+    - Input 1-> Recieving end Power(Enter in Mega/Kilo watts)
+    - Input 2-> Recieving end Voltage(Enter in Kilo volts)
+    - Input 3-> Resistance  of Long Transmission Line(Enter in Ohms)
+    - Input 4-> Inductive Reactance(Enter in ohms)
+    - Input 5-> Capacitive suceptance(Enter in mho)
+    - Input 6-> Power factor(0<pf<1)
+    - Input 7-> Length of line(Enter in Km)
+
 ## SWOT ANALYSIS
   ![swot](https://user-images.githubusercontent.com/36735523/114818941-3f939500-9dda-11eb-8742-94560f170af5.png)
 
