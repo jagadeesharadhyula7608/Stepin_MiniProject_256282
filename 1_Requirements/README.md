@@ -53,7 +53,7 @@ This project helps to calculate the Transmission Line parameters(A,B,CD) when gi
 
 ## When:
 - With the increasing population demand for Electric power also increased exponentially.
-- With the increase in power demand,increased the problem to design the efficient transmision system to reduce the power loss
+- With the increase in power demand,increased the problem to design the efficient transmision system to reduce the power loss across india
 
 ## Where:
 - This problem is surfaced in all states of India
