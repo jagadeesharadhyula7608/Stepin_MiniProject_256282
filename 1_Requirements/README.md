@@ -4,8 +4,7 @@
 This project helps to calculate the Transmission Line parameters(A,B,CD) when given with some input data containing voltage, length of Transmission Line etc. Display the total line parameters and also the Efficiency of the line including voltage regulation values. This parameter helps out the engineer to know about the working of transmission system to reduce losses and construct the transmission line in a much faster pace with high efficiency and reliability.
 
 ## Research
-![Description](Link to Pic)
--- Content 
+
 ## Cost and Features
 ![Description](Link to Pic)
 -- Content 
@@ -17,7 +16,7 @@ This project helps to calculate the Transmission Line parameters(A,B,CD) when gi
   ### Explaination:
    For Transmission lines it takes more time for calculating the sending end voltage to finally get the efficiency manually.This project helps the customer to re-design their transmission system with higher efficiency by simply puting their design values in this project and taking out the efficiency.
 ## SWOT ANALYSIS
-  ![swot](https://user-images.githubusercontent.com/36735523/114701479-7f0da300-9d40-11eb-83e8-2d78aa6d6446.png)
+  ![swot](https://user-images.githubusercontent.com/36735523/114818941-3f939500-9dda-11eb-8742-94560f170af5.png)
 
 
 # 4W&#39;s and 1&#39;H
