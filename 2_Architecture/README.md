@@ -1,7 +1,6 @@
 ## High Level Diagram
 ### Flow chart 
-
-
+![High-level](https://user-images.githubusercontent.com/36735523/114856031-3a4b4000-9e04-11eb-9c25-343caa609b76.png)
 
 ## Low Level Diagram
 ### Flow chart 
