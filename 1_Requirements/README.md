@@ -50,7 +50,7 @@ This project helps to calculate the Transmission Line parameters(A,B,CD) when gi
 ##  Low level Requirements:
 | ID | Description | HLR ID | Status
 | ------ | ------ | ------ | ------|
-| LR01 | Small menu should be created for the user to interact.     |  HR01  |  IMPLEMENTED|
+| LR01 | Small menu should be created for the user to interact.A switch case statement to get the option for the user to select the type of transmission line.     |  HR01  |  IMPLEMENTED|
 | LR02 | A function to calculate the complex addition.And magnitude of complex number is required to compute the function shortLine | HR02 | IMPLEMENTED|
 | LR03 | A function to calculate the complex addition.And magnitude of complex number and complex multiplication function is required to compute the function MediumLine | HR03 |IMPLEMENTED|
 | LR04 | Requires all the complex number arthimetic functions   HR04 | IMPLEMENTED| 
